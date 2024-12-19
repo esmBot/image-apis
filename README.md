@@ -1,2 +1,2 @@
-# projectlounge
-This is the source code for the Node.js backend portion of [projectlounge.pw](https://projectlounge.pw). Historically, this had more things (check the commit history), but nowadays this mainly just serves the random image APIs at [files.projectlounge.pw](https://files.projectlounge.pw) that are used mostly by [esmBot](https://esmbot.net).
+# files.esmbot.net
+This is the source code for [files.esmbot.net](https://files.esmbot.net). Historically, this was hosted on projectlounge.pw and had more things (check the commit history).
