@@ -1,5 +1,5 @@
-import { Hono, type Context } from "jsr:@hono/hono";
-import { serveStatic } from "jsr:@hono/hono/deno";
+import { Hono, type Context } from "@hono/hono";
+import { serveStatic } from "@hono/hono/deno";
 
 const app = new Hono();
 
@@ -11,11 +11,7 @@ function registerFileRouter(ctx: Hono, path: string) {
   }
 
   const handler = (c: Context) =>
-    c.redirect(
-      `${path}/files/${encodeURIComponent(
-        files[Math.floor(Math.random() * files.length)]
-      )}`
-    );
+    c.redirect(`${path}/files/${files[Math.floor(Math.random() * files.length)]}`);
 
   ctx.get(path, handler);
   ctx.get(`${path}/`, handler);
